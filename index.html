@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background: url(./images/bg-pattern-bottom.svg);
+      background-color: hsl(185, 75%, 39%);
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .cardBg {
+      margin: auto;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      width: 100%;
+    }
+    .victor {
+      width: 8%;
+      border-radius: 50%;
+      border: solid white 5px;
+      margin: auto;
+      position: absolute;
+      top: 270px;
+      left: 46%;
+    }
+    .info {
+      width: 30%;
+      height: 60%;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+    }
+    .name {
+      /* margin: auto; */
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0% 2%;
+      margin-top: 20%;
+    }
+    .age {
+      font-size: 20px;
+    }
+    .district {
+      color:  hsl(0, 0%, 59%);
+    }
+    .divider {
+      color:  hsl(0, 0%, 59%);
+    }
+    .bottomContainer {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .num {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 0px;
+    }
+    .des {
+      font-size: 13px;
+      margin-top: 10px;
+      color:  hsl(0, 0%, 59%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bg"></div>
+    <div class="info">
+      <img class="cardBg" src="./images/bg-pattern-card.svg">
+      <img class="victor" src="images/image-victor.jpg">
+      <span class="name">Victor Crest</span>
+      <span class="age">26</span>
+      <p class="district">London</p>
+      <hr class="divider" />
+      <div class="bottomContainer">
+        <div>
+          <p class="num">80K</p>
+          <p class="des">Followers</p>
+        </div>
+        <div>
+          <p class="num">803K</p>
+          <p class="des">Likes</p>
+        </div>
+        <div>
+          <p class="num">1.4K</p>
+          <p class="des">Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">plokm1234</a>.
+  </div>
+</body>
+</html>
